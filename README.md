@@ -30,3 +30,28 @@ Description => fragment  </br>
 This is to help navigate a part of resource that the client requests (web server doesn't respect it, it is all about web browser showing the current fragment of response/resource)  </br>
 
 http://host:8080/path?q=query#fragment this is the general format </br>
+
+## URL Encoding
+pay attention to Unsafe characters like space </br>
+Safe Character: A-Z a-z 0-9 - . _ ~ ( ) ' ! * : @ , ; </br>
+Unsafe Character: % < > [ ] { } | \ ^ </br>
+If you still want to use unsafe character, you have to escape them for example 'space' is %20 </br>
+
+## Content Type
+When host responses, it will response content and content type, so that web browser can render correct content type </br>
+MIME type: Multipurpose Internet Mail Extensions (came from email originally) </br>
+MIME type example: image/png  application/json  text/plain  text/html text/plain </br>
+
+## Content Negotiation
+When client request resource, single URL may have different representation in the host(web server). client can specify which type will be accepted on client side </br>
+For example, French version of www.google.com, you can change internet option in browser so request will be sent along with content negotiation </br>
+
+## HTTP Messages
+HTTP standard define the protocol so that client and server can understand each other </br>
+
+## HTTP Methods:
+GET,POST - In most HTML web application </br> 
+(PUT,DELETE,HEAD)- mostly never used in web application </br>
+Note: POST method comes with form data </br>
+
+
